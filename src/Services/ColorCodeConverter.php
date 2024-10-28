@@ -1,6 +1,6 @@
 <?php
 
-namespace AizPackages\ColorCodeConverter\Services;
+namespace RestechDev\ColorCodeConverter\Services;
 
 use App\Models\Addon;
 
