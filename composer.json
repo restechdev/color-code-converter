@@ -1,16 +1,16 @@
 {
-    "name": "aiz-packages/color-code-converter",
-    "description": "HEX code coverted to RGB color code",
+    "name": "restechdev/color-code-converter",
+    "description": "HEX code converted to RGB color code",
     "type": "library",
     "authors": [
         {
-            "name": "Shifat Hossain",
-            "email": "amithassan3229@gmail.com"
+            "name": "Shakib Bin Kabir",
+            "email": "shakib.kabir@aceintelligent.tech"
         }
     ],
     "require": {
-        "php": "^7.3|^8.0",
-        "illuminate/support": "*"
+        "php": "^8.0",
+        "illuminate/support": "^8.0|^9.0|^10.0"
     },
     "require-dev": {
         "orchestra/testbench": "^6.0",
@@ -19,26 +19,25 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "AizPackages\\ColorCodeConverter\\": "src/"
+            "RestechDev\\ColorCodeConverter\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "AizPackages\\ColorCodeConverter\\Tests\\": "tests"
+            "RestechDev\\ColorCodeConverter\\Tests\\": "tests/"
         }
     },
     "scripts": {
         "test": "vendor/bin/phpunit",
         "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
-
     },
-    "extras": {
+    "extra": {
         "laravel": {
-            "provders": [
-                "AizPackages\\ColorCodeConverter\\Providers\\ColorCodeConverterProvider"
+            "providers": [
+                "RestechDev\\ColorCodeConverter\\Providers\\ColorCodeConverterServiceProvider"
             ]
         }
-
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
